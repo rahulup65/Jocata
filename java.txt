@@ -2,3 +2,5 @@ java is a programming language it is object oriented language and it is also pla
 
 
 but jvm is plateform dependent that is why java is plateform independent.
+
+Going to merge 
