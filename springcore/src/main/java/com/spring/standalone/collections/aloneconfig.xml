@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  
+ <beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:util="http://www.springframework.org/schema/util"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd">
+ 
+
+
+<!-- standalone  list -->
+
+<util:list list-class="java.util.LinkedList" id="mybestfriends">
+<value>aman</value>
+<value>ramn</value>
+<value>ritesh</value>
+<value>rohit</value>
+</util:list>
+
+<!-- standalone map -->
+
+<util:map map-class="java.util.HashMap" id="fees">
+
+<entry key ="spring framework" value=" 8000"/>
+<entry key ="springboot framework" value=" 8000"/>
+<entry key =" django framework" value=" 8000"/>
+
+</util:map>
+
+
+
+
+<bean class="com.spring.standalone.collections.Person" name="person1">
+<property name="friends"  ref="mybestfriends"/>
+<property name="freestructure" ref="fees"></property>
+
+
+</bean>
+
+
+ 
+ </beans>
